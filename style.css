@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+:root{
+    --mainColor:rgb(94, 0, 0);
+}
+.home .container{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+h3{
+    color:var(--mainColor);
+    font-size: 30px;
+
+}
+.home .container img{
+    width: 100%;
+    border-radius: 10px;   
+}
+.home .container .header h1{
+    color: #000;
+    margin: 10px 0;
+}
+.home .container .header p{
+    margin-bottom: 20px;
+}
+.home .container .prep-section{
+    background-color: rgb(255, 239, 239);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.home .container .prep-section h3{
+    color:rgb(125, 9, 9);
+    padding: 10px;
+}
+.home .container .prep-section .list{
+    padding-left: 30px;
+    margin: 10px 0;
+}
+.home .container .prep-section .list p{
+    margin-bottom: 5px;
+    position: relative;
+}
+.home .container .prep-section .list p::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    left: -20px;
+    top: 45%;
+}
+.home .container .ingredients{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.home .container .ingredients .list{
+    margin: 10px;
+}
+.home .container .ingredients .list p{
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+.home .container .ingredients .list p::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    left: 0;
+    top: 50%;
+
+}
+.home .container .instruction{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.home .container .instruction ol{
+    counter-reset: item;
+    margin:10px ;
+    padding-left: 10px;
+}
+.home .container .instruction ol li{
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+}
+.home .container .instruction ol li::before{
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: var(--mainColor);    
+    left: -15px;
+    position: absolute;
+    font-weight: bold;
+}
+hr{
+    background-color: #f2f2f2;
+    border: none;
+    height: 2px;
+}
+.home .container .nutrition{
+margin-bottom: 10px;
+}
+.home .container .nutrition h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.home .container .nutrition p{
+    margin-bottom: 15px;
+}
+.home .container .nutrition .content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 20px; */
+    position: relative;
+    padding-top: 20px;
+
+}
+.home .container .nutrition .content::after{
+    content: "";
+    height: 2px;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+}
+.home .container .nutrition .content .value{
+    color:var(--mainColor);
+    font-weight: bold;
+}
